@@ -14,8 +14,6 @@ class DetailVC: UIViewController {
     @IBOutlet weak var movieTitle: UILabel!
     @IBOutlet weak var movieYear: UILabel!
     @IBOutlet weak var movieGenre: UILabel!
-    @IBOutlet weak var imdbLink: UILabel!
-    @IBOutlet weak var kpLink: UILabel!
     @IBOutlet weak var moviePlot: UILabel!
     @IBOutlet weak var movieLike: UILabel!
     @IBOutlet weak var movieImg: UIImageView!
@@ -31,8 +29,6 @@ class DetailVC: UIViewController {
         movieTitle.text = movie.title
         movieYear.text = movie.year
         movieGenre.text = movie.genre
-        imdbLink.text = movie.imdb
-        kpLink.text = movie.kinopoisk
         moviePlot.text = movie.plot
         movieLike.text = movie.like
         movieImg.image = movie.getMovieImg()
@@ -40,6 +36,16 @@ class DetailVC: UIViewController {
         
         movieImg.clipsToBounds = true
         bgImg.clipsToBounds = true
+    }
+    
+    
+    
+    @IBAction func openIMdBLink(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: movie.imdb!)!)
+    }
+    
+    @IBAction func openKinopoiskLink(sender: AnyObject!) {
+        UIApplication.sharedApplication().openURL(NSURL(string: movie.kinopoisk!)!)
     }
 
 }
