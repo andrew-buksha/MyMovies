@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB45740B1BEF4DF2009D3B61 /* AddMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB45740A1BEF4DF2009D3B61 /* AddMovieVC.swift */; };
+		BB45740D1BEF4E1C009D3B61 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB45740C1BEF4E1C009D3B61 /* DetailVC.swift */; };
 		BB97DC3C1BEE60AC001871D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97DC3B1BEE60AC001871D5 /* AppDelegate.swift */; };
 		BB97DC3E1BEE60AC001871D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97DC3D1BEE60AC001871D5 /* ViewController.swift */; };
 		BB97DC411BEE60AC001871D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB97DC3F1BEE60AC001871D5 /* Main.storyboard */; };
 		BB97DC441BEE60AC001871D5 /* MyMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB97DC421BEE60AC001871D5 /* MyMovies.xcdatamodeld */; };
 		BB97DC461BEE60AC001871D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB97DC451BEE60AC001871D5 /* Assets.xcassets */; };
 		BB97DC491BEE60AC001871D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB97DC471BEE60AC001871D5 /* LaunchScreen.storyboard */; };
+		BB97DC541BEE93F2001871D5 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97DC531BEE93F2001871D5 /* MovieCell.swift */; };
+		BB97DC571BEE98F1001871D5 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97DC551BEE98F1001871D5 /* Movie+CoreDataProperties.swift */; };
+		BB97DC581BEE98F1001871D5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97DC561BEE98F1001871D5 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB45740A1BEF4DF2009D3B61 /* AddMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieVC.swift; sourceTree = "<group>"; };
+		BB45740C1BEF4E1C009D3B61 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		BB97DC381BEE60AC001871D5 /* MyMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB97DC3B1BEE60AC001871D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB97DC3D1BEE60AC001871D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		BB97DC451BEE60AC001871D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB97DC481BEE60AC001871D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB97DC4A1BEE60AC001871D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB97DC531BEE93F2001871D5 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		BB97DC551BEE98F1001871D5 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "../Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BB97DC561BEE98F1001871D5 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,44 @@
 		BB97DC3A1BEE60AC001871D5 /* MyMovies */ = {
 			isa = PBXGroup;
 			children = (
+				BB97DC521BEE93C5001871D5 /* Controller */,
+				BB97DC511BEE93C0001871D5 /* View */,
+				BB97DC501BEE93B9001871D5 /* Model */,
 				BB97DC3B1BEE60AC001871D5 /* AppDelegate.swift */,
-				BB97DC3D1BEE60AC001871D5 /* ViewController.swift */,
-				BB97DC3F1BEE60AC001871D5 /* Main.storyboard */,
 				BB97DC451BEE60AC001871D5 /* Assets.xcassets */,
 				BB97DC471BEE60AC001871D5 /* LaunchScreen.storyboard */,
 				BB97DC4A1BEE60AC001871D5 /* Info.plist */,
 				BB97DC421BEE60AC001871D5 /* MyMovies.xcdatamodeld */,
 			);
 			path = MyMovies;
+			sourceTree = "<group>";
+		};
+		BB97DC501BEE93B9001871D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB97DC551BEE98F1001871D5 /* Movie+CoreDataProperties.swift */,
+				BB97DC561BEE98F1001871D5 /* Movie.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BB97DC511BEE93C0001871D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB97DC3F1BEE60AC001871D5 /* Main.storyboard */,
+				BB97DC531BEE93F2001871D5 /* MovieCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BB97DC521BEE93C5001871D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB97DC3D1BEE60AC001871D5 /* ViewController.swift */,
+				BB45740A1BEF4DF2009D3B61 /* AddMovieVC.swift */,
+				BB45740C1BEF4E1C009D3B61 /* DetailVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +179,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB97DC3E1BEE60AC001871D5 /* ViewController.swift in Sources */,
+				BB97DC571BEE98F1001871D5 /* Movie+CoreDataProperties.swift in Sources */,
+				BB97DC581BEE98F1001871D5 /* Movie.swift in Sources */,
 				BB97DC441BEE60AC001871D5 /* MyMovies.xcdatamodeld in Sources */,
+				BB45740B1BEF4DF2009D3B61 /* AddMovieVC.swift in Sources */,
+				BB45740D1BEF4E1C009D3B61 /* DetailVC.swift in Sources */,
+				BB97DC541BEE93F2001871D5 /* MovieCell.swift in Sources */,
 				BB97DC3C1BEE60AC001871D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +333,7 @@
 				BB97DC4F1BEE60AC001871D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
