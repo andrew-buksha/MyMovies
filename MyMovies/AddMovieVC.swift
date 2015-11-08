@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var movieTitle: UITextField!
     @IBOutlet weak var movieYear: UITextField!
@@ -30,6 +30,17 @@ class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         movieImg.layer.cornerRadius = 5.0
         movieImg.clipsToBounds = true
 
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        movieTitle.resignFirstResponder()
+        movieYear.resignFirstResponder()
+        movieGenre.resignFirstResponder()
+        imdbLink.resignFirstResponder()
+        kinopoiskLink.resignFirstResponder()
+        moviePlot.resignFirstResponder()
+        movieLike.resignFirstResponder()
+        return true
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
