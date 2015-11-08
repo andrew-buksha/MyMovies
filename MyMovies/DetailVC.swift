@@ -7,29 +7,39 @@
 //
 
 import UIKit
+import CoreData
 
 class DetailVC: UIViewController {
+    
+    @IBOutlet weak var movieTitle: UILabel!
+    @IBOutlet weak var movieYear: UILabel!
+    @IBOutlet weak var movieGenre: UILabel!
+    @IBOutlet weak var imdbLink: UILabel!
+    @IBOutlet weak var kpLink: UILabel!
+    @IBOutlet weak var moviePlot: UILabel!
+    @IBOutlet weak var movieLike: UILabel!
+    @IBOutlet weak var movieImg: UIImageView!
+    @IBOutlet weak var bgImg: UIImageView!
+    
+    var movie: Movie!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        movieTitle.text = movie.title
+        movieYear.text = movie.year
+        movieGenre.text = movie.genre
+        imdbLink.text = movie.imdb
+        kpLink.text = movie.kinopoisk
+        moviePlot.text = movie.plot
+        movieLike.text = movie.like
+        movieImg.image = movie.getMovieImg()
+        bgImg.image = movie.getMovieImg()
+        
+        movieImg.clipsToBounds = true
+        bgImg.clipsToBounds = true
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

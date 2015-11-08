@@ -18,6 +18,7 @@
 		BB97DC541BEE93F2001871D5 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97DC531BEE93F2001871D5 /* MovieCell.swift */; };
 		BB97DC571BEE98F1001871D5 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97DC551BEE98F1001871D5 /* Movie+CoreDataProperties.swift */; };
 		BB97DC581BEE98F1001871D5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97DC561BEE98F1001871D5 /* Movie.swift */; };
+		BBDB44EF1BEF653700CD08F5 /* Bariol_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBDB44EE1BEF653700CD08F5 /* Bariol_Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		BB97DC531BEE93F2001871D5 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		BB97DC551BEE98F1001871D5 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "../Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BB97DC561BEE98F1001871D5 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../Movie.swift; sourceTree = "<group>"; };
+		BBDB44EE1BEF653700CD08F5 /* Bariol_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Bold.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		BB97DC2F1BEE60AC001871D5 = {
 			isa = PBXGroup;
 			children = (
+				BBDB44EE1BEF653700CD08F5 /* Bariol_Bold.otf */,
 				BB97DC3A1BEE60AC001871D5 /* MyMovies */,
 				BB97DC391BEE60AC001871D5 /* Products */,
 			);
@@ -168,6 +171,7 @@
 				BB97DC491BEE60AC001871D5 /* LaunchScreen.storyboard in Resources */,
 				BB97DC461BEE60AC001871D5 /* Assets.xcassets in Resources */,
 				BB97DC411BEE60AC001871D5 /* Main.storyboard in Resources */,
+				BBDB44EF1BEF653700CD08F5 /* Bariol_Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

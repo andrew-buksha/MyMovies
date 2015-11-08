@@ -56,6 +56,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let movie = movies[indexPath.row]
+        performSegueWithIdentifier("DetailVC", sender: movie)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "DetailVC" {
+            if let detailVC = segue.destinationViewController as? DetailVC {
+                if let movie = sender as? Movie {
+                    detailVC.movie = movie
+                }
+            }
+        }
+    }
 
 
 }
