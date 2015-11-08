@@ -254,7 +254,7 @@
                                     <outlet property="delegate" destination="ln9-2U-jyc" id="imx-5s-DNJ"/>
                                 </connections>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPb-VV-CvK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPb-VV-CvK">
                                 <rect key="frame" x="225" y="338" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="TVb-E2-cdi"/>
@@ -717,7 +717,8 @@
                     <navigationBar key="navigationBar" alpha="0.20000000000000001" contentMode="scaleToFill" id="JZ7-FQ-pb6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.2899893579182547" green="0.50798343974467897" blue="0.90430924771794863" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.2592906022" blue="0.60553120279999995" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
